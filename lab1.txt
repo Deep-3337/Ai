@@ -1,0 +1,423 @@
+Python 3.7.7 (tags/v3.7.7:d7c567b08f, Mar 10 2020, 10:41:24) [MSC v.1900 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>>
+>>> "hrllp"
+'hrllp'
+>>> "Hello Deep"
+'Hello Deep'
+>>> 'hello'
+'hello'
+>>> #fff
+>>> """this is """
+'this is '
+>>> "ksdmk
+  File "<stdin>", line 1
+    "ksdmk
+         ^
+SyntaxError: EOL while scanning string literal
+>>>
+>>>
+>>>
+>>>
+>>> x="Deep"
+>>> print("Hello" + " " + x)
+Hello Deep
+>>> 27+2
+29
+>>> x="deep"
+>>> def fun():
+...     print("Hello "+x)
+... fun()
+  File "<stdin>", line 3
+    fun()
+      ^
+SyntaxError: invalid syntax
+>>> x="deep"
+>>> def fun():
+...     print("Hello "+x)
+...
+>>> fun()
+Hello deep
+>>> x=5
+>>> print(type(x))
+<class 'int'>
+>>>
+>>>
+>>> i="Hello world"
+>>> print(a[1])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'a' is not defined
+>>> i="Hello world"
+>>> print(i[1])
+e
+>>> i="Hello world"
+>>> print(i[6:10])
+worl
+>>>
+>>>
+>>> #negative
+>>> i="Hello world"
+>>> print(i[-5:-2])
+wor
+>>>
+>>> #length
+>>> i="Hello world"
+>>> print(len(i))
+11
+>>>
+>>>
+>>> i=" .   Hello     world   .  "
+>>> print(i.strp())
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'strp'
+>>> i="    Hello     world     "
+>>> print(i.strp())
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'strp'
+>>> i=" .   Hello     world   .  "
+>>> print(i.strip())
+.   Hello     world   .
+>>>
+>>>
+>>>
+>>>
+>>> txt="The rain in Vadodara"
+>>> x="ain" in txt
+>>> print(x)
+True
+>>> x, y, z = "Orange", "Banana", "Cherry"
+>>> print(x)
+Orange
+>>> print(y)
+Banana
+>>> print(z)
+Cherry
+>>>
+>>> a = "Hello, World!"
+>>> print(a.replace("H", "J"))
+Jello, World!
+>>>
+>>> a = "Hello World!"
+>>> print(a.split(" "))
+['Hello', 'World!']
+>>>
+>>>
+>>> age = 36
+>>> txt = "My name is John, and I am {}"
+>>> print(txt.format(age))
+My name is John, and I am 36
+>>>
+>>> quantity = 3
+>>> itemno = 567
+>>> price = 49.95
+>>> myorder = "I want {} pieces of item {} for {} dollars."
+>>> print(myorder.format(quantity, itemno, price))
+I want 3 pieces of item 567 for 49.95 dollars.
+>>>
+>>>
+>>>
+>>> #list
+>>> thislist = ["apple", "banana", "cherry"]
+>>> print(thislist)
+['apple', 'banana', 'cherry']
+>>>
+>>> thislist = ["apple", "banana", "cherry"]
+>>> print(thislist)
+['apple', 'banana', 'cherry']
+>>>
+>>> thislist = ["apple", "banana", "cherry"]
+>>> print(thislist[2])
+cherry
+>>>
+>>> #negative index
+>>> thislist = ["apple", "banana", "cherry"]
+>>> print(thislist[-2])
+banana
+>>>
+>>> #range
+>>> thislist = ["apple", "banana", "cherry","Mango","orange",]
+>>> print(thislist[1:4])
+['banana', 'cherry', 'Mango']
+>>>
+>>> thislist = ["apple", "banana", "cherry","Mango","orange"]
+>>> print(thislist[:4])
+['apple', 'banana', 'cherry', 'Mango']
+>>>
+>>> thislist = ["apple", "banana", "cherry","Mango","orange"]
+>>> print(thislist[1:])
+['banana', 'cherry', 'Mango', 'orange']
+>>>
+>>> #negative range
+>>> thislist = ["apple", "banana", "cherry","Mango","orange"]
+>>> print(thislist[-4:-1])
+['banana', 'cherry', 'Mango']
+>>>
+>>>
+>>> thislist = ["apple", "banana", "cherry","Mango","orange"]
+>>> thislist[1]="coconot"
+>>> print(thislist)
+['apple', 'coconot', 'cherry', 'Mango', 'orange']
+>>>
+>>> thislist = ["apple", "banana", "cherry"]
+>>> for x in thislist:
+...   print(x)
+...
+apple
+banana
+cherry
+>>>
+>>> #length
+>>> thislist = ["apple", "banana", "cherry"]
+>>>   print(len(thislist))
+  File "<stdin>", line 1
+    print(len(thislist))
+    ^
+IndentationError: unexpected indent
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist.len()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'len'
+>>>
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist.append("orange")
+>>> print(thislist)
+['apple', 'banana', 'cherry', 'orange']
+>>>
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist.remove("banana")
+>>> print(thislist)
+['apple', 'cherry']
+>>>
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist.pop()
+'cherry'
+>>> print(thislist)
+['apple', 'banana']
+>>>
+>>>
+>>> thislist = ["apple", "banana", "cherry"]
+>>> del thislist[0]
+>>> print(thislist)
+['banana', 'cherry']
+>>>
+>>>
+>>> thislist = ["apple", "banana", "cherry"]
+>>> thislist.clear()
+>>> print(thislist)
+[]
+>>>
+>>>
+>>> thislist = ["apple", "banana", "cherry"]
+>>> mylist = list(thislist)
+>>> print(mylist)
+['apple', 'banana', 'cherry']
+>>>
+>>>
+>>> list1 = ["a", "b" , "c"]
+>>> list2 = [1, 2, 3]
+>>> list3= list1 + list2
+>>> print(list3)
+['a', 'b', 'c', 1, 2, 3]
+>>>
+>>>
+>>> list1 = ["a", "b" , "c"]
+>>> list2 = [1, 2, 3]
+>>> for x in list2:
+...     list1.append(x)
+...
+>>> print(list1)
+['a', 'b', 'c', 1, 2, 3]
+>>>
+>>>
+>>> list1 = ["a", "b" , "c"]
+>>> list2 = [1, 2, 3]
+>>> list1.append(list2)
+>>> print(list1)
+['a', 'b', 'c', [1, 2, 3]]
+>>>
+>>>
+>>> thislist = list(("apple", "banana", "cherry"))
+>>> print(thislist)
+['apple', 'banana', 'cherry']
+>>>
+>>>
+>>> thistuple = ("apple", "banana", "cherry")
+>>> print(thistuple)
+('apple', 'banana', 'cherry')
+>>>
+>>>
+>>> thistuple = ("apple", "banana", "cherry")
+>>> print(thistuple[1])
+banana
+>>>
+>>>
+>>> thistuple = ("apple", "banana", "cherry")
+>>> print(thistuple[-1])
+cherry
+>>>
+>>>
+>>> thistuple = ("apple", "banana", "cherry", "orange", "kiwi", "melon", "mango")
+>>> print(thistuple[2:5])
+('cherry', 'orange', 'kiwi')
+>>>
+>>>
+>>> x = ("apple", "banana", "cherry")
+>>> y = list(x)
+>>> y[1] = "kiwi"
+>>> x = tuple(y)
+>>>
+>>> print(x)
+('apple', 'kiwi', 'cherry')
+>>>
+>>>
+>>> thistuple = ("apple", "banana", "cherry")
+>>> for x in thistuple:
+...   print(x)
+...
+apple
+banana
+cherry
+>>>
+>>>
+>>> thistuple = ("apple", "banana", "cherry")
+>>> for x in thistuple:
+...   print(x)
+...
+apple
+banana
+cherry
+>>>
+>>>
+>>> thistuple = ("apple", "banana", "cherry")
+>>> print(len(thistuple))
+3
+>>>
+>>>
+>>> thistuple = ("apple", "banana", "cherry")
+>>> thistuple[3]="orange"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> thistuple = ("apple", "banana", "cherry")
+>>> thistuple[3] = "orange"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>>
+>>>
+>>> thistuple=("apple",)
+>>> print(type(thistiple))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'thistiple' is not defined
+>>> thistuple=("apple",)
+>>> print(type(thistuple))
+<class 'tuple'>
+>>>
+>>> thisset = {"apple", "banana", "cherry"}
+>>> for x in thisset:
+...     print(x)
+...
+banana
+cherry
+apple
+>>>
+>>>
+>>> thisset = {"apple", "banana", "cherry"}
+>>> print("banana" in thisset)
+True
+>>>
+>>>
+>>> thisset = {"apple", "banana", "cherry"}
+>>> thisset.add("orange")
+>>> print(thisset)
+{'banana', 'cherry', 'orange', 'apple'}
+>>>
+>>>
+>>> thisset = {"apple", "banana", "cherry"}
+>>> thisset.remove("banana")
+>>> print(thisset)
+{'cherry', 'apple'}
+>>>
+>>>
+>>> thisset = {"apple", "banana", "cherry"}
+>>> x = thiiset.pop()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'thiiset' is not defined
+>>> thisset = {"apple", "banana", "cherry"}
+>>> x = thisset.pop()
+>>> print(x)
+banana
+>>> print(thisset)
+{'cherry', 'apple'}
+>>>
+>>>
+>>> thisset = {"apple", "banana", "cherry"}
+>>> thisset.clear()
+>>> print(thisset)
+set()
+>>>
+>>> set1 = {"a", "b" , "c"}
+>>> set2 = {1,2,3}
+>>> set3 = set1.union(set2)
+>>> print(set3)
+{1, 2, 'b', 3, 'a', 'c'}
+>>>
+>>>
+>>> thisdict = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> print(thisdict)
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+>>>
+>>>
+>>> thisdict = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> thisdict["year"] = 2018
+>>>
+>>> print(thisdict)
+{'brand': 'Ford', 'model': 'Mustang', 'year': 2018}
+>>>
+>>>
+>>> thisdict = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> if "model" in thisdict:
+...   print("Yes, 'model' is one of the keys in the thisdict dictionary")
+...
+Yes, 'model' is one of the keys in the thisdict dictionary
+>>>
+>>>
+>>> thisdict = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> thisdict["color"] = "red"
+>>> print(thisdict)
+{'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'red'}
+>>>
+>>>
+>>> thisdict = {
+...   "brand": "Ford",
+...   "model": "Mustang",
+...   "year": 1964
+... }
+>>> thisdict.pop("model")
+'Mustang'
+>>> print(thisdict)
+{'brand': 'Ford', 'year': 1964}
+>>>
